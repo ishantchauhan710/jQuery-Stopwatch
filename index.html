@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stopwatch</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <style>
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: #212225;
+            }
+            
+            .time {
+                background-color: #161719;
+                color: aliceblue;
+                font-size: 10vw;
+                text-align: center;
+                font-family: sans-serif;
+            }
+            
+            .lap {
+                background-color: brown;
+                color: white;
+                font-size: 4.5vw;
+                text-align: center;
+                float: right;
+                padding: 5px;
+                font-family: sans-serif;
+            }
+            
+            .control {
+                width: 18vw;
+                height: 8vw;
+                font-size: 4vw;
+                padding: 5px;
+                background-color: rgba(255,0,0,0.5);
+                outline: 0;
+                border: 0;
+                color: white;
+            }
+            
+            .control:active {
+                background-color: rgba(255,0,0,1);
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            .lapsBox {
+                height: 50px;
+                border-bottom: 1px solid white;
+                margin: 15px;
+                color: white;
+            }
+            
+            .laptimetitle {
+                font-size: 1.5em;
+                float: left;
+            }
+            
+            .laptime {
+                font-size: 2em;
+                float: right;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        
+        <div class="time">
+        <span id="timeMinutes">00</span>:<span id="timeSeconds">00</span>:<span id="timeMilliseconds">00</span>
+        </div>
+        
+        <div class="lap">
+        <span id="lapMinutes">00</span>:<span id="lapSeconds">00</span>:<span id="lapMilliseconds">00</span>
+        </div>
+        
+        <div class="buttons">
+        <button class="control"  id="btnStart">Start</button>
+        <button class="control"  id="btnStop">Stop</button>
+        <button class="control"  id="btnPause">Pause</button>
+        <button class="control"  id="btnResume">Resume</button>
+        <button class="control"  id="btnLap">Lap</button>
+        </div>
+        <br><br><br>
+        <div class="laps">
+        
+        </div>
+        
+        <script src="script.js"></script>
+        
+        
+        
+        
+    </body>
+    
+</html>
